@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ang="ja">
+		<head>
+		<meta charset="UTF-8">
+		<title>仮</title>
+		<meta name="description" content="サイトの説明が入ります"/>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			02
+			$(function () {
+				03
+				$('a[href^=#]').click(function () {
+					04
+					var speed = 500;
+					05
+					var href = $(this).attr("href");
+					06
+					var target = $(href == "#" || href == "" ? 'html' : href);
+					07
+					var position = target.offset().top;
+					08
+					$("html, body").animate({ scrollTop: position }, speed, "swing");
+					09
+					return false;
+					10
+				});
+				11
+			});
+			12
+		</script>
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		</head>
+		<body>
+<div id="wrapper">
+          <div class="wrap">
+    <header id="hed">
+              <h1><a href="index.html" art="ヘッダーのリンク"><img src="img/logo (1).png" art="画像"></a></h1>
+		    <div id="topimg">
+				<a href="#hed"><img class="topimg1" src="img/title_share.png" alt=""></a>
+				<div class="topimg2">
+							<img src="img/btn_share-twitter.png" alt="">
+							<img src="img/btn_share-line.png" alt="">
+							<img src="img/btn_share-faecbook.png" alt="">
+				</div>
+		</div>
+            </header>
+    <div class="cp_bgpattern04"></div>
+    <div id="demo_129"></div>
+    <div class="cp_bgpattern09 fuwafuwa"></div>
+    <div class="cp_bgpattern10"></div>
+    <div class="cp_bgpattern11"></div>
+    <div class="cp_bgpattern12 fuwafuwa"></div>
+    <div id="top_image">
+              <p><img src="img/facebook-og.png" art="画像" class="fadein"></p>
+            </div>
+  </div>
+          <div id="wrap2">
+    <div id="demo"></div>
+    <nav id="nav1">
+              <ul>
+        <li><a href="#hed">Top</a></li>
+        <li><a href="#contents">Character</a></li>
+        <li><a href="#sec2">Storty</a></li>
+        <li><a href="#sec3">Contact</a></li>
+      </ul>
+            </nav>
+    <div id="contents">
+    <section id="sec1">
+              <h1>Today's Menu for the Emiya Family</h1>
+        <div id="graphic">
+        		<ul>
+                  <li class="now"><img class="image1" src="img/128537.jpg" alt=""></li>
+                  <li><img class="image2" src="img/c3c8c16fbc529474ddce76a16751a490.jpg" alt=""></li>
+                  <li><img class="image3" src="img/20180127182656.jpg" alt=""></li>
+                </ul>
+      </div>
+            </section>
+    <section id="sec2">
+              <h2>Story</h2>
+              <h3>Fate×料理が織りなす美味しく優しい世界―</h3>
+              <p class="sec2text">大雪の降る、とても寒いある日。今日も、衛宮家には自然とみんなが集まり、同じものを囲み、同じ場所で食事をとる。<br>
+        士郎が作る、今日のごはんは―</p>
+              <div id="sec2-box">
+        <p><img class="hiyasi" src="img/ダウンロード (1).png" alt="">「冷やし茶漬け」</p>
+        <p><img class="takenoko" src="img/ダウンロード (1).png" alt="">「たけのこグラタン」</p>
+        <p><img class="aki" src="img/ダウンロード (1).png" alt="">「秋の味覚」</p>
+      </div>
+              <div class="img_box"> <img src="img/story7.jpg" alt=""> <img src="img/story3.jpg" alt=""> <img src="img/story9.jpg" alt=""> </div>
+              <div  class="bg"></div>
+              <div id="demo_120"></div>
+            </section>
+    <section id="sec3"　class="clearfix">
+              <h2>Contact</h2>
+              <div class="left">
+        <table width="459" height="250" border="1">
+                  <tbody>
+            <tr>
+                      <th width="211" scope="row" class="thtag">配信サイト</th>
+                      <td width="262" class="tdtag">配信日</td>
+                    </tr>
+            <tr>
+                      <th height="48" scope="row">Abema TV</th>
+                      <td>毎月　1日</td>
+                    </tr>
+            <tr>
+                      <th scope="row">dアニメストア</th>
+                      <td height="41">毎月　８日</td>
+                    </tr>
+            <tr>
+                      <th scope="row">バンダイチャンネル</th>
+                      <td height="35">毎月　８日</td>
+                    </tr>
+          </tbody>
+                </table>
+      </div>
+              <div class="right">
+              <form>
+        <div class="clearfix">
+                  <lavel for="name" class="f-left">お名前</lavel>
+                  <input type="text" name="name" id="textfield" id="name">
+                </div>
+        <div class="clearfix">
+                  <label for="tel" class="f-left">電話番号</label>
+                  <input type="tel" name="tel" id="tel">
+                </div>
+        <div class="clearfix">
+                  <label for="url" class="f-left" id="lit">URL</label>
+                  <input type="url" name="url" id="url">
+                </div>
+        <div class="clearfix" id="lit" class="con">
+        <p class="lit2">Contact</p>
+        <p>
+                  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </p>
+        </div>
+        <div>
+                  <input type="submit" name="submit" id="submint" value="送信する" class="btn">
+                </div>
+      </form>
+              </div>
+              <div id="sec3img"><img src="img/img_intro.png" alt=""></div>
+            </section>
+  </div>
+          <footer>
+    <p>このホームページに掲載されている一切の文書･図版･写真等を、<br>
+              手段や形態を問わず複製、転載することを禁じます。</p>
+    <p>©TAa・KADOKAWA・TYPE-MOON / 「衛宮さんちの今日のごはん」製作委員会</p>
+  </footer>
+        </div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/slideshow.js"></script>
+</body>
+</html>
